@@ -1,5 +1,3 @@
-// part of 'timer_bloc.dart';
-
 sealed class TimerEvent {
   const TimerEvent();
 }
@@ -17,9 +15,7 @@ class TimerResumed extends TimerEvent {
   const TimerResumed();
 }
 
-class TimerReset extends TimerEvent {
-  const TimerReset();
-}
+class TimerReset extends TimerEvent {}
 
 class TimerTicked extends TimerEvent {
   final int duration;

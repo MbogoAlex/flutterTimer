@@ -12,8 +12,9 @@ class Ticker {
 class Ticker2 {
   const Ticker2();
 
-  Stream<int> countdown(int ticks) async* {
+  Stream<int> tick(int ticks) async* {
     for (int i = ticks; i > 0; i--) {
+      print(i);
       yield i;
       await Duration(seconds: 1);
     }
